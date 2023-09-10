@@ -1,0 +1,27 @@
+.collapsible {
+  cursor: pointer;
+  padding: 10px;
+  width: 100%;
+  border: 1px black solid;
+  text-align: left;
+}
+
+.collapsible:hover {
+  background-color: aquamarine;
+}
+
+.collapsible::after {
+  content: "\02795";
+  float: right;
+}
+
+.active::after {
+  content: "\2796";
+  float: right;
+}
+
+.content {
+  padding: 0 10px;
+  display: none;
+  overflow: hidden;
+}
