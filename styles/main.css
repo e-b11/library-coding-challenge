@@ -1,15 +1,57 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  max-width: 70rem;
+  margin: auto;
+  height: 90vh;
+}
+
+h1 {
+  font-size: 2rem;
+  margin: 1rem;
+  border-bottom: 1px gray solid;
+  font-weight: normal;
+  padding-bottom: 10px;
+}
+
+.flex {
+  width: 50rem;
+  display: flex;
+  justify-content: start;
+  align-self: flex-start;
+  flex-direction: column;
+  margin-top: 10vh;
+}
+
+/* Remove button styling */
+button {
+  background-color: white;
+  border: none;
+  border-radius: 2px;
+  font-weight: bold;
+  font-size: 1rem;
+}
+
 .collapsible {
   cursor: pointer;
   padding: 10px;
   width: 100%;
-  border: 1px black solid;
   text-align: left;
+  background-color: none;
+}
+
+.question {
+  background-color: white;
+  border: 1px gray solid;
+  border-radius: 2px;
+  margin: 1rem;
+  box-shadow: 0 0 3px gray;
 }
 
 .collapsible:hover {
   background-color: aquamarine;
 }
 
+/* Add + or - symbol to button */
 .collapsible::after {
   content: "\02795";
   float: right;
